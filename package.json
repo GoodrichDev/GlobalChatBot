@@ -1,0 +1,19 @@
+{
+  "name": "global-chat-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Discord bot utilities for EarthMC account linking.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy:commands": "node src/deploy-commands.js",
+    "check": "for file in src/*.js test/*.test.js; do node --check \"$file\"; done",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {}
+}
